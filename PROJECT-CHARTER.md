@@ -1,60 +1,59 @@
 # PROJECT CHARTER — Tree Distance Sandbox
 
-## Project Identity
+## 1. PROJECT IDENTITY
 
 | Field | Value |
 |:------|:------|
-| **Project Name** | tree-distance-sandbox |
+| **Project Name** | `tree-distance-sandbox` |
 | **Title** | Tree Distance Sandbox |
 | **Type** | QWAV Spinoff — Interactive Artifact (D13) |
+| **QWAV Strategy Reference** | `strategy/3.0.md` — Build Gravity, Tier 1 Artifact A4 |
 | **Created** | 2026-05-22 |
-| **Deployed** | 2026-05-23 |
-| **Live URL** | https://qnfo.github.io/tree-distance/ |
-| **Repository** | QNFO/tree-distance |
+| **Repository** | `QNFO/tree-distance` |
+| **Live Target** | `https://qnfo.github.io/tree-distance/` |
 | **Parent Program** | QWAV — Ultrametric Quantum Computing & AI |
 
-## Purpose & Thesis
+## 2. RAISON D'ÊTRE — QWAV STRATEGY NEXUS
 
-Interactive cophenetic, ultrametric, and Euclidean distance comparison. Users click tree leaves to discover triadic rigidity — the signature of ultrametric geometry.
+**This project exists because the claim that "distance" means fundamentally different things in different geometries requires an interactive comparison to be understood.**
 
-## Technical Approach
+Most people know only Euclidean distance. The concept that cophenetic distance (tree-based) and ultrametric distance behave differently — and that the strong triangle inequality makes ultrametric distance qualitatively distinct — is abstract without interaction. This sandbox lets users click two points on a tree and see three different distance values instantly.
 
-Single HTML file, vanilla JavaScript, Canvas API. No dependencies.
+The Tree Distance publication (DOI: `10.5281/zenodo.20213043`) provides the formal treatment. This artifact makes it intuitive.
 
-## User Interaction
+**Strategic contribution:**
+- Provides the educational on-ramp — before someone can understand error confinement or convergence, they need to understand ultrametric distance
+- The triadic rigidity demonstration (3 points, 2 distances must be equal) is a memorable "aha" moment
+- Lower technical barrier than A1-A3 — accessible to anyone
 
-Click-based leaf selection. Three distance types computed and displayed per triangle.
+**Without this project, visitors to A1-A3 may lack the geometric intuition to understand what they're seeing.**
 
-## Evidence Contribution
+## 3. SCOPE
 
-All triples satisfy the strong triangle inequality. 649/649 triples ultrametric (The Tree Is Real validation).
+### In Scope
+- Interactive tree with clickable leaf nodes
+- Three distance displays: cophenetic (tree depth of LCA), ultrametric (normalized cophenetic), Euclidean (spatial)
+- Triadic rigidity visualization — select 3 points, show which 2 distances are equal
+- Visual highlighting of the LCA path for each pair
+- Responsive design
 
-## Success Criteria
+### Out of Scope
+- Non-tree distance metrics (Manhattan, cosine, etc.)
+- Large-scale tree exploration (> depth 5)
+- Mathematical proofs (link to paper)
 
-1. Interactive elements respond to user input (verified by automated canvas check)
-2. Deployed and loading at https://qnfo.github.io/tree-distance/
-3. JavaScript executes without console errors
-4. Cross-linked from QWAV Technical Site Hub
-5. Demonstrates a specific, published QWAV result
+## 4. CURRENT STATUS (2026-05-23)
 
-## Constraints
+**Phase:** PROTOTYPE — Functional but minimal
 
-- Zero external dependencies (no CDN, no npm)
-- Single HTML file (inline CSS/JS)
-- GitHub Pages deployment (no server)
-- MIT licensed or equivalent open-source
+**What exists:** A single `index.html` (9 KB, 146 lines JS) with tree rendering, leaf selection, and distance displays. Three distance values computed. Click interaction works.
 
-## Relationship to QWAV Program
-
-This project is one of 5 interactive artifacts (D13) that make QWAV's computational evidence tangible. Each demo demonstrates one key result:
-- Error Confinement → strong triangle inequality visualization
-- Q-PNA Playground → glass-box AI decision trees
-- Convergence Explorer → ultrametric vs Euclidean comparison
-- Tree Distance Sandbox → cophenetic distance computation
-- Hardware Visualizer → neutral atom hardware mapping
-
-Together, these 5 demos + the Technical Site Hub + the Virtual Qubit Showdown form the complete QWAV Gravity Portfolio.
+**What's missing:**
+- **Triadic rigidity demonstration.** The core "aha" moment is not built.
+- **No explanation of what distances mean.** Values displayed but no context.
+- **No test suite.**
+- **No cross-links to A1-A3.**
 
 ---
 
-*Project charter established 2026-05-22. Project completed 2026-05-23.*
+*Updated: 2026-05-23 | QWAV Strategy: Build Gravity v3.0 | Artifact: Tier 1 — A4*
