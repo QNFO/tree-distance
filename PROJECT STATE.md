@@ -3,17 +3,16 @@
 **Project:** tree-distance-sandbox
 **Description:** Interactive cophenetic/ultrametric/Euclidean distance comparison
 **Type:** QWAV Spinoff -- Interactive Artifact (D13)
-**Status:** BUILT -- Ready for deploy
+**Status:** DEPLOYED
 **Created:** 2026-05-22
+**Deployed:** 2026-05-22
+**Live URL:** https://qnfo.github.io/tree-distance/
 
 ## Current Status
 
-Artifact is built (index.html + .nojekyll). Single HTML file, vanilla JS.
-Ready for GitHub Pages deployment.
+Deployed to GitHub Pages. Site verified live. Single HTML file, vanilla JS.
+Remote: https://github.com/QNFO/tree-distance.git
 
 ## Next Steps
 
-1. Push to GitHub under QNFO org
-2. Enable GitHub Pages in repo settings
-3. Verify live URL
-4. Report back to QWAV agent with URL
+None. Deployment complete. Handoff to QWAV agent for verification.
