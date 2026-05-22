@@ -39,6 +39,15 @@ This project is **complete** when ALL of the following are true:
 - [x] Mobile responsive (viewport meta, flexible layout)
 - [x] All external links functional
 
+### Archive Cross-Reference
+
+This demo implements the cophenetic distance formalism from:
+- **Tree Distance Cophenetic** (Archive 2026/05 → DOI: 10.5281/zenodo.20213043) — mathematical formalization of cophenetic distance on rooted trees
+- **Computational-Ultrametricity** (Archive 2026/05) — ultrametric.py core library, 649 triples verified
+- **The Tree Is Real** (Archive 2026/05 → DOI: 10.5281/zenodo.20325850) — published validation that all triples satisfy the strong triangle inequality
+
+The three distance types (cophenetic, ultrametric, Euclidean) computed here were first formalized in Tree Distance Cophenetic. The triadic rigidity property demonstrated interactively was validated computationally in The Tree Is Real.
+
 ## What Is Explicitly OUT of Scope
 
 - Production-grade accessibility (WCAG AA)
